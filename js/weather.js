@@ -11,14 +11,14 @@
  //   console.log(number + "is between 0 and 100, both included");
 //}
 function myFunction(){
-	var temparature = document.getElementById("temp").value;
+	var temperature = document.getElementById("temp").value;
 	
 	//declare variables and to access an HTML element
 		
 	//assign values
 	
 	if (temperature >=27) {
-		alert( "summer dresscode shorts sunglasses t-shirts");
+		alert("summer dresscode shorts sunglasses t-shirts");
 	   }
 	   else if (temperature <=26 && temperature >20){
 		alert(" wear long sleeve shirts trousers");
