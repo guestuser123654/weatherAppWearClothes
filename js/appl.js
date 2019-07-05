@@ -1,9 +1,9 @@
 window.addEventListener('load', () =>{
     let long;
     let lat;
-//setting for the data to load
+     //setting for the data to load
 
-//
+     //
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position =>{
         long =position.coords.longitude;
@@ -12,6 +12,7 @@ window.addEventListener('load', () =>{
        const api = `https://api.darksky.net/forecast/818c1882586afdc68070e2267b152279/${lat},${long}`;
 
        //calling for the api to be changed since coord has been changed
+       //to fetch the api then when received
          fetch(api)
         .then(response=>{
          return response.jason();
