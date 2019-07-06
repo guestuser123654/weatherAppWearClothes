@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: 0;
 }
-
+/* padding changing the size whole screen */
 body {
     height: 100vh;
     display: flex;
@@ -14,6 +14,7 @@ body {
     font-family: sans-serifcolor;
     color: white
 }
+/*design of the location , and display temperature  */
 .location, 
 .temperature{
     height: 30vh;
@@ -21,8 +22,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-}
+/*  */
+ } 
+ 
+ /* changing the position of the temp structure and moving degree section */
 .temperature{
 flex-direction:column}
 
