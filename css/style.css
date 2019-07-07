@@ -10,8 +10,8 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgb(47, 150, 163),rgb(48, 62, 143));
-    background-image: image();
+   /* background: linear-gradient(rgb(47, 150, 163),rgb(48, 62, 143));*/
+    background-image: image ('/images/landscape-4313085__340.jpg');
     font-family: sans-serifcolor;
     color: white
 }
