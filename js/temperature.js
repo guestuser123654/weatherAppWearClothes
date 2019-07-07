@@ -1,5 +1,5 @@
-function myFunction(){
-	var temparature = document.getElementById("temp").value;
+//function myFunction(){
+//	var temparature = document.getElementById("temp").value;
 	
 	//declare variables and to access an HTML element
 		

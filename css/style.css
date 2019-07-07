@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     background: linear-gradient(rgb(47, 150, 163),rgb(48, 62, 143));
+    background-image: image();
     font-family: sans-serifcolor;
     color: white
 }
@@ -22,6 +23,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 /*  */
  } 
  

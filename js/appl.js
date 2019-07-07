@@ -15,18 +15,18 @@ window.addEventListener('load', () =>{
         long =position.coords.longitude;
         lat = position.coords.latitude;
        const proxy ="https://cors-anywhere.herokuapp.com/";
-       const api = `https://api.darksky.net/forecast/818c1882586afdc68070e2267b152279/${lat},${long}`;
+       const api = `${proxy} https://api.darksky.net/forecast/818c1882586afdc68070e2267b152279/${lat},${long}`;
 
        //calling for the api to be changed since coord has been changed
        //to fetch the api then when received
          fetch(api)
         .then(response=>{
-         return response.jason();
+         return response.json(); 
        
      })
           .then(data => {                                                                                                     
           console.log(data);
-          const {temperature,summary} = data.currently;
+          const {temperature, summary} = data.currently;
                     
           //set Dom Elements from the API
           temperatureDegree.textContent = temperature ;
