@@ -1,22 +1,70 @@
-* {
+body {
+    background: #232840;
+    color: #fff;
+  }
+  
+  button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  :focus {outline:none;}
+  ::-moz-focus-inner {border:0;}
+  
+  .chip {
+    width: 500px;
+    background: #131521;
+    padding: 50px;
+    position: relative;
+    top: 80px;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  
+  .display-3,
+  h3,
+  h4,
+  h6,
+  button {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #weather-icon,
+  #btnFahrenheit {
+    color: #2d314a;
+  }
+  
+  #description {
+    position: relative;
+    top: -15px;
+    left: 20px;
+  }
+  
+  #otherDetails {
+    margin-top: 20px;
+    color: #2d314a;
+  }
+/* {
     margin: 0;
     padding: 0;
     box-sizing: 0;
 }
-/* padding changing the size whole screen */
+ padding changing the size whole screen 
 body {
-    height: 100vh;
+    /*height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgb(47, 150, 163),rgb(48, 62, 143));
+   /* background: linear-gradient(rgb(47, 150, 163),rgb(48, 62, 143));*/
     /*background-image: url('/images/landscape4.jpg');*/
-    font-family: sans-serifcolor;
+    /*font-family: sans-serifcolor;
     color: white
 }
 /*design of the location , and display temperature  */
-.location, 
+/*.location, 
 .temperature{
     height: 30vh;
     width: 50%;
@@ -25,10 +73,10 @@ body {
     align-items: center;
     
 /*  */
- } 
+ /*}*/
  
  /* changing the position of the temp structure and moving degree section */
-.temperature{
+/*.temperature{
 flex-direction:column}
 
 .degree.section {
@@ -39,3 +87,4 @@ flex-direction:column}
 .degree-section h2{
     font-size: 40px;
 }
+
