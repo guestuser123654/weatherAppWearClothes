@@ -1,32 +1,85 @@
+body {
+  background: #232840;
+  color: #fff;
+}
 
-  
-  
- /*body { 
-  background-image: url("landscape12.jpg") no-repeat fixed center;
-  background-color: white;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; 
+button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+.chip {
+  width: 500px;
+  background: #131521;
+  padding: 50px;
+  position: relative;
+  top: 80px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.display-3,
+h3,
+h4,
+h6,
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#weather-icon,
+#btnFahrenheit {
+  color: #2d314a;
+}
+
+#description {
+  position: relative;
+  top: -15px;
+  left: 20px;
+}
+
+#otherDetails {
+  margin-top: 20px;
+  color: #2d314a;
+}
+
+.footer {
+             position: fixed;           
+             left: 0;
+              bottom: 0;
+              width: 100%;
+              background-image:img src="landscape17.jpg";
+              color: white;
+              text-align: center;
+            };            
+
+
+
+
+/*body{
+  background-color: #eee;
+}
+
+/*.container{
+  width: 500px;
+  height: 300px;
+  margin:25vh auto;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3)
 }*/
- 
-  .container{
-    text-align:below;
-    font-size: 28px
-  }
-   
-  
-  h1 {display: block;
-    font-size: .83em;
-    font-weight: bold;
-    font-family: Tahoma ;
-    font-size: 29px ;
-  }
-    
-  
-/*putting the colour and shape of the header*/
-
+/*
+.header {
+  height: 20%;
+  background-color: #FF9800;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+  position:relative;
+}
 
 #temp, #humidity-div {
   font-family: "Courier New";
@@ -70,7 +123,7 @@
   height: 80%;
   width: 50%;
   border-bottom-left-radius: 25px;
-  background-color: #2196F3;
+  background-color: #FFC107;
 }
 
 .temperature {
@@ -79,7 +132,7 @@
   top:0%;
   height: 40%;
   width: 50%;
-  background-color: #555;
+  background-color: #9C27B0;
 }
 
 .humidity {
@@ -89,7 +142,7 @@
   left:50%;
   top:40%;
   border-bottom-right-radius: 25px;
-  background-color: #060330;
+  background-color: #E91E63;
 }
 
 #search-btn {
@@ -107,8 +160,7 @@
   padding-right:1px;
   padding-left:1px;
   text-align:center;
-}/*
-body{background-color: rgb(114, 111, 111);}*/
+}
 
 .search {
   position: absolute;
@@ -116,59 +168,5 @@ body{background-color: rgb(114, 111, 111);}*/
   top:50%;
   -webkit-transform:translate(-50%,-50%);
           transform:translate(-50%,-50%);
-}
- /*styling the side nav bar*/
-#mySidenav a {
-  position: absolute;
-  left: -80px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 100px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 0 5px 5px 0;
-}
-/*
-#mySidenav a:hover {
-  left: 0;
-}
-
-#about {
-  top: 20px;
-  background-color: rgb(111, 76, 175);
-}
-
-#blog {
-  top: 80px;
-  background-color: #2196F3;
-}
-
-#projects {
-  top: 140px;
-  background-color: #060330;
-}
-
-#contact {
-  top: 200px;
-  background-color: #555
-}
+};
 */
-.footer {
-  position: fixed;           
-  left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: rgb(1, 4, 24);
-   color: white;
-   text-align: center;
- }   
- 
- body, html {
-  height: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
