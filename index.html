@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
         
@@ -7,17 +8,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
      
     <title>weatherAppWear</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel ="stylesheet" href ="css/style.css">
-       
-  </head>
-  <div class= "container">
-    ENTER THE TEMPERATURE: <input type= "number" id="temp">
-    <input type="submit" value="submit" onclick="myFunction()">
-</div> 
+
+    <link rel ="stylesheet" href ="style.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
 
 
-<body class="container1">
+  
+</div>
+
+
+
+
+
+<body class="container">
+
+<h1> Weather App Wear</h1>
+
+<div class= "container">
+      ENTER THE TEMPERATURE: <input type= "number" id="temp">
+      <input type="submit" value="submit" onclick="myFunction()">
+  
+</div>
   
   <!-- Weather Chip -->
   <div class="chip">
@@ -31,10 +43,10 @@
           </div>
           <!-- Change Temperature Unit -->
           <div class="col-2">
-            <button id="btnCelsius" onclick="getCelsius()" disabled>°C</button>
+            <button id="btnCelsius" onclick="getCelsius()" disabled>32°C</button>
           </div>
           <div class="col-2">
-            <button id="btnFahrenheit" onclick="getFahrenheit()">°F</button>
+            <button id="btnFahrenheit" onclick="getFahrenheit()">67°F</button>
           </div>
           <!-- end Change Temperature Unit -->
         </div>
@@ -43,12 +55,44 @@
         </div>
       </div>
     </div> <!-- end Temperature Row -->
-        
-            
-       
-<script src="js/weather.js"></script>
-<script scr="js/app.js"></script>
-<script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
-  
+    
+    <!-- Date, Time and Place Row -->
+    <div class="row">
+      <div class="col text-center">
+        <h3 id="place">Cape Town</h3>
+        <h3 id="dateTime">13:30</h3>
+      </div>
+    </div> <!-- end Date, Time and Place Row -->
+    
+    <!-- Other Weather Details Row -->
+    <div id="otherDetails" class="row">
+      <div class="col text-center">
+        <i class='wi wi-humidity' style='font-size: 3em'></i>
+        <h4 id="humidity"></h4>
+      </div>
+      <div class="col text-center">
+        <i class='wi wi-strong-wind' style='font-size: 3em'></i>
+        <h4 id="windSpeed"></h4>
+      </div>
+      <div class="col text-center">
+        <i class='wi wi-thermometer' style='font-size: 3em'></i>
+        <h4 id="celsius"></h4>
+      </div>
+    </div> <!-- end Other Weather Details Row -->
+  </div> <!-- end Weather Chip -->
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      Logo
+    </div>
+</div>
+
+   <div class="footer">
+                        <p>Powered by <a href="img src="landscape17.jpg" width="0" height="0" title="BTM" target="_blank" class="w3-hover-text-green">E.Munemo</a></p>
+                      </div>
+ <script src="js/appl.js"></script>
+ <script src="js/temperature.js"></script>
+ <script src="js/weather.js"></script>
+
 </body>
 </html>

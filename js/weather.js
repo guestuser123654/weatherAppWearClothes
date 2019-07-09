@@ -1,15 +1,3 @@
-//let temparature = Number(prompt("Enter a number:"));
-//if (temparature > 0) {
-  //  console.log(number + " is positive");
-//} else if (temparature < 0) {
- //   console.log(temparature+ " is negative ");
-//} else{
-   // console.log(temparature + " is zero ");
-//}
-
-//if (temparature >= 0 && temparature <= 100) {
- //   console.log(number + "is between 0 and 100, both included");
-//}
 function myFunction(){
 	var temperature = document.getElementById("temp").value;
 	

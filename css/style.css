@@ -1,90 +1,174 @@
-body {
-    background: #232840;
-    color: #fff;
-  }
-  
-  button {
-    background: transparent;
-    border: none;
-    color: #fff;
-    font-size: 30px;
-  }
-  
-  :focus {outline:none;}
-  ::-moz-focus-inner {border:0;}
-  
-  .chip {
-    width: 500px;
-    background: #131521;
-    padding: 50px;
-    position: relative;
-    top: 80px;
-    margin: 0 auto;
-    border-radius: 4px;
-  }
-  
-  .display-3,
-  h3,
-  h4,
-  h6,
-  button {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  #weather-icon,
-  #btnFahrenheit {
-    color: #2d314a;
-  }
-  
-  #description {
-    position: relative;
-    top: -15px;
-    left: 20px;
-  }
-  
-  #otherDetails {
-    margin-top: 20px;
-    color: #2d314a;
-  }
-/* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
- padding changing the size whole screen 
-body {
-    /*height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-   /* background: linear-gradient(rgb(47, 150, 163),rgb(48, 62, 143));*/
-    /*background-image: url('/images/landscape4.jpg');*/
-    /*font-family: sans-serifcolor;
-    color: white
-}
-/*design of the location , and display temperature  */
-/*.location, 
-.temperature{
-    height: 30vh;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-/*  */
- /*}*/
- 
- /* changing the position of the temp structure and moving degree section */
-/*.temperature{
-flex-direction:column}
 
-.degree.section {
-    display: flex;
-    align-content: center;
-    cursor: pointer;
+  
+  
+ /*body { 
+  background-image: url("landscape12.jpg") no-repeat fixed center;
+  background-color: white;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+}*/
+ 
+  .container{
+    text-align:below;
+    font-size: 28px
+  }
+   
+  
+  h1 {display: block;
+    font-size: .83em;
+    font-weight: bold;
+    font-family: Tahoma ;
+    font-size: 29px ;
+  }
+    
+  
+/*putting the colour and shape of the header*/
+
+
+#temp, #humidity-div {
+  font-family: "Courier New";
+  font-weight: bold;
+  font-size: 60px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-.degree-section h2{
-    font-size: 40px;
+
+.city-icon-holder {
+  position:absolute;
+  left: 25%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#city-name {
+  font-family: "Courier New";
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#icon {
+  width:50%;
+}
+
+#main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.city-icon {
+  height: 80%;
+  width: 50%;
+  border-bottom-left-radius: 25px;
+  background-color: #2196F3;
+}
+
+.temperature {
+  position: absolute;
+  left: 50%;
+  top:0%;
+  height: 40%;
+  width: 50%;
+  background-color: #555;
+}
+
+.humidity {
+  height: 40%;
+  width: 50%;
+  position:absolute;
+  left:50%;
+  top:40%;
+  border-bottom-right-radius: 25px;
+  background-color: #060330;
+}
+
+#search-btn {
+  width: 40px;
+  height:40px;
+  color: #eee;
+}
+
+#search-txt {
+  color: red;
+  height:30px;
+  border-radius: 10px;
+  border-style:none;
+  outline:none;
+  padding-right:1px;
+  padding-left:1px;
+  text-align:center;
+}/*
+body{background-color: rgb(114, 111, 111);}*/
+
+.search {
+  position: absolute;
+  left: 50%;
+  top:50%;
+  -webkit-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%);
+}
+ /*styling the side nav bar*/
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+/*
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: rgb(111, 76, 175);
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #060330;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+*/
+.footer {
+  position: fixed;           
+  left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(1, 4, 24);
+   color: white;
+   text-align: center;
+ }   
+ 
+ body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 

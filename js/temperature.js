@@ -1,3 +1,8 @@
+window.addEventListener('load', () =>{
+    
+  
+    //setting for the data to load
+
 if (navigator.geolocation) {				
   navigator.geolocation.getCurrentPosition(showPosition);
  } else {
@@ -5,7 +10,7 @@ if (navigator.geolocation) {
  }
  
  function showPosition(position) {
-   var api = "https://fcc-weather-api.glitch.me/api/current?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude;
+   var api = "818c1882586afdc68070e2267b152279" + position.coords.latitude + "&lon=" + position.coords.longitude;
  
    $.getJSON(api, function(data){
      // Getting Weather Details
@@ -63,3 +68,4 @@ if (navigator.geolocation) {
    
    $("#temp").html(Math.round((parseInt($("#temp").text()) - 32)/ 1.8).toFixed(1));
  }
+});

@@ -1,49 +1,47 @@
-window.addEventListener('load', () =>{
-    
-    let long;
-    let lat;
-    let  temperatureDescription = document.querySelector
-    (".temperature-description"
-    );
-    let  temperatureDegree = document.querySelector(".temperature-degree");
-    let  locationTimezone = document.querySelector(".location-timezone");
-     //setting for the data to load
+     const appKey = "f24f40b1c24505685fce3b8acd0fcffc";
 
-     //
-    if (navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(position =>{
-        long =position.coords.longitude;
-        lat = position.coords.latitude;
-       const proxy ="https://cors-anywhere.herokuapp.com/";
-       const api = `${proxy} https://api.darksky.net/forecast/818c1882586afdc68070e2267b152279/${lat},${long}`;
+let searchButton = document.getElementById("search-btn");
+let searchInput = document.getElementById("search-txt");
+let cityName = document.getElementById("city-name");
+let icon = document.getElementById("icon");
+let temperature = document.getElementById("temp");
+let humidity = document.getElementById("humidity-div");
 
-       //calling for the api to be changed since coord has been changed
-       //to fetch the api then when received
-         fetch(api)
-        .then(response=>{
-         return response.json(); 
-       
-     })
-          .then(data => {                                                                                                     
-          console.log(data);
-          const {temperature, summary} = data.currently;
-                    
-          //set Dom Elements from the API
-          temperatureDegree.textContent = temperature ;
-          temperatureDescription.textContent = summary;
-          locationTimezone.textContent = data.timezone;
+searchButton.addEventListener("click", findWeatherDetails);
+searchInput.addEventListener("keyup", enterPressed);
 
+function enterPressed(event) {
+  if (event.key === "Enter") {
+    findWeatherDetails();
+  }
+}
 
+function findWeatherDetails() {
+  if (searchInput.value === "") {
+  
+  }else {
+    let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&appid="+appKey;
+   httpRequestAsync(searchLink, theResponse);
+  }
+ }
 
+function theResponse(response) {
+  let jsonObject = JSON.parse(response);
+  cityName.innerHTML = jsonObject.name;
+  icon.src = "http://openweathermap.org/img/w/" + jsonObject.weather[0].icon + ".png";
+  temperature.innerHTML = parseInt(jsonObject.main.temp - 273) + "°";
+  humidity.innerHTML = jsonObject.main.humidity + "%";
+}
 
+function httpRequestAsync(url, callback)
+{
+  console.log("hello");
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.onreadystatechange = () => { 
+        if (httpRequest.readyState == 4 && httpRequest.status == 200)
+            callback(httpRequest.responseText);
+    }
+    httpRequest.open("GET", url, true); // true for asynchronous 
+    httpRequest.send();
+};
 
-     });
-
-         
-//set Dom Elements from the API 
-        });
-     }                                                          
-          
-});
-
-     
