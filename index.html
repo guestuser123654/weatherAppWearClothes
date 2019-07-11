@@ -19,7 +19,7 @@
 <body class="container">
 
 <h1> Weather App Wear</h1>
-
+<!--input of the weather to inform you of the type of clothes to wear-->
 <div class= "container">
       ENTER THE TEMPERATURE: <input type= "number" id="temp">
       <input type="submit" value="submit" onclick="myFunction()">
@@ -83,7 +83,12 @@
         
              
     
-    <h3 id="dateTime"></h3>
+    <h3 id="dateTime"><button type="button"
+      onclick="document.getElementById('demo').innerHTML = Date()"> Date & Time
+      <a id="search-btn" href="#"><i class="fas fa-search"></i></a>
+     </button>
+      
+      <p id="demo"></p></h3>
       </div>
     </div> <!-- end Date, Time and Place Row -->
     
@@ -109,7 +114,7 @@
   <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
     </div>
     <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      
+    
     </div>
 </div>
 

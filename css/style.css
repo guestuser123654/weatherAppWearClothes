@@ -2,7 +2,7 @@ body {
   background: #232840;
   color: #fff;
 }
-
+/* changing the structure of the button*/
 button {
   background: transparent;
   border: none;
@@ -22,7 +22,7 @@ button {
   margin: 0 auto;
   border-radius: 4px;
 }
-
+/*
 .display-3,
 h3,
 h4,
