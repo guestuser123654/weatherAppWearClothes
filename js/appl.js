@@ -1,4 +1,5 @@
-     const appKey = "f24f40b1c24505685fce3b8acd0fcffc";
+ // calling on the API 
+    const appKey = "f24f40b1c24505685fce3b8acd0fcffc";
 
 let searchButton = document.getElementById("search-btn");
 let searchInput = document.getElementById("search-txt");
@@ -7,9 +8,10 @@ let icon = document.getElementById("icon");
 let temperature = document.getElementById("temp");
 let humidity = document.getElementById("humidity-div");
 
+//Search and input buttons
 searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
-
+//variables for the api
 function enterPressed(event) {
   if (event.key === "Enter") {
     findWeatherDetails();
@@ -30,7 +32,7 @@ function theResponse(response) {
   cityName.innerHTML = jsonObject.name;
   icon.src = "http://openweathermap.org/img/w/" + jsonObject.weather[0].icon + ".png";
   temperature.innerHTML = parseInt(jsonObject.main.temp - 273) + "°";
-  humidity.innerHTML = jsonObject.main.humidity + "%";
+  humidity.innerHTML = jsonObject.main.humidity + "%";// the response of the app
 }
 
 function httpRequestAsync(url, callback)
